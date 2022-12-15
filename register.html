@@ -1,0 +1,82 @@
+<!--This page allows the user to register-->
+<!--Author: Caden Nelson-->
+<!--Date: 11/30/2022-->
+<html>
+<!--Embedded CSS-->
+<style>
+	@font-face {
+  font-family: 'Ink Free';
+  font-style: normal;
+  font-weight: 400;
+}
+
+img {
+	float: right;
+	margin: 5px;
+	margin-left: auto;
+	max-width: 50%;
+	border-radius: 8px;
+}
+
+.header {
+	background-color: #002060;
+	text-align: center;
+	height: 100px;
+}
+
+body {
+	text-align: justify;
+	background: #001030 ;
+	font-family: "Ink Free" ;
+	color: #ffa000;
+}
+.button {
+  background-color: #ffa000;
+  border: none;
+  color: #001030;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration-thickness: 6px;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: "Ink Free";
+}
+</style>
+<!--Body of the HTML document-->
+<body>
+  <div class="header">
+    <h1>Registration Form</h1>
+  </div>
+  <img src="table.jpg">
+  <h2>Please input your info into the boxes below</h2>
+  <p>
+<!--Form with Post method-->
+  <form action = "registration.cgi" method = "POST">
+   Username: <input type = "text" name = "username">  <br />
+ 
+   Password: <input type = "text" style = "-webkit-text-security: circle" name = "password" />  <br />
+ 
+   First Name: <input type = "text" name = "firstname" />  <br />
+ 
+   Last Name: <input type = "text" name = "lastname" />  <br />
+ 
+   Email Address: <input type = "text" name = "email" />  <br />
+ 
+   Street Address: <input type = "text" name = "address" />  <br />
+ 
+   City: <input type = "text" name = "city" />  <br />
+ 
+   State: <input type = "text" name = "state" />  <br />
+ 
+   Zipcode: <input type = "text" name = "zip" />  <br />
+ 
+   Country: <input type = "text" name = "country" />
+   <input class = "button" type = "submit" value = "Submit" />
+  </form>
+  <p>Already have an account?</p>
+<!--Allows user to return home-->
+  <button class = "button" onclick="document.location.href='form2.html';">Login</button>
+</body>
+</html>

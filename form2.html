@@ -1,0 +1,63 @@
+<!--This page gives options for loging in-->
+<!--Author: Caden Nelson-->
+<!--Date: 11/30/2022-->
+<html>
+<!--Embedded CSS-->
+<style>
+@font-face {
+  font-family: 'Ink Free';
+  font-style: normal;
+  font-weight: 400;
+}
+
+img {
+	float: right;
+	margin: 5px;
+	margin-left: auto;
+	max-width: 50%;
+	border-radius: 8px;
+}
+
+.header {
+	background-color: #002060;
+	text-align: center;
+	height: 100px;
+}
+
+body {
+	text-align: justify;
+	background: #001030 ;
+	font-family: "Ink Free" ;
+	color: #ffa000;
+}
+.button {
+  background-color: #ffa000;
+  border: none;
+  color: #001030;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration-thickness: 6px;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: "Ink Free";
+}
+</style>
+<div class = "header">
+  <h1>Login</h1>
+</div>
+<body>
+  <img src="sleep.jpg">
+  <p>
+<!--Form for username and password-->
+  <form action = "password.cgi" method = "POST">
+   Username: <input type = "text" name = "username"> <br>
+   Password: <input type = "text" style = "-webkit-text-security: circle" name = "password">
+   <input class = "button" type = "submit" value = "Submit" />
+  </form>
+  <p>New to the site?</p>
+<!--Allows user to return home-->
+  <button class = "button" onclick="document.location.href='register.html';">Click here to register</button>
+</body>
+</html>

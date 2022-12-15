@@ -1,0 +1,81 @@
+<!--This page allows one to input a daily health log-->
+<!--Author: Caden Nelson-->
+<!--Date: 11/30/2022-->
+<html>
+<!--Embedded CSS-->
+<style>
+	@font-face {
+  font-family: 'Ink Free';
+  font-style: normal;
+  font-weight: 400;
+}
+
+img {
+	float: right;
+	margin: 5px;
+	margin-left: auto;
+	max-width: 50%;
+	border-radius: 8px;
+}
+
+.header {
+	background-color: #002060;
+	text-align: center;
+	height: 100px;
+}
+
+body {
+	text-align: justify;
+	background: #001030 ;
+	font-family: "Ink Free" ;
+	color: #ffa000;
+}
+.button {
+  background-color: #ffa000;
+  border: none;
+  color: #001030;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration-thickness: 6px;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: "Ink Free";
+}
+</style>
+<!--HTML body-->
+<body>
+  <div class="header">
+    <h1>Insert data for today</h1>
+  </div>
+  <img src="runner.jpg">
+  <h2>Please type your username</h2>
+  <p>
+<!--Provides form with with post method-->
+  <form action = "insertion.cgi" method = "POST">
+   Username: <input type = "text" name = "username">  <br />
+ 
+   Today's Date (mm/dd/yyyy): <input type = "date" name = "date" />  <br />
+ 
+   Carbs (grams): <input type = "number" name = "carbs" />  <br />
+ 
+   Minutes of Excercise: <input type = "number" name = "exercise" />  <br />
+ 
+   Water consumed (cups): <input type = "number" name = "water" />  <br />
+ 
+   Protein (grams): <input type = "number" name = "protein" />  <br />
+ 
+   Sugar (grams): <input type = "number" name = "sugar" />  <br />
+ 
+   Sleep (hours): <input type = "number" name = "sleep" />  <br />
+ 
+   Fat (grams): <input type = "number" name = "fat" />  <br />
+ 
+   Calories: <input type = "number" name = "calories" />
+   <input class ="button" type = "submit" value = "Submit" />
+  </form>
+<!--Allows user to return home-->
+  <button class="button" onclick="document.location.href='index.html';">Return to Home</button>
+</body>
+</html>

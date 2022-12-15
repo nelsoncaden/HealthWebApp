@@ -1,0 +1,58 @@
+<!--This page introduces the user and allows him or her to login or register-->
+<!--Author: Caden Nelson-->
+<!--Date: 11/30/2022-->
+<!doctype html>
+<html>
+<!--Embedded CSS-->
+<style>
+  @font-face {
+  font-family: 'Ink Free';
+  font-style: normal;
+  font-weight: 400;
+}
+
+img {
+	float: right;
+	margin: 5px;
+	margin-left: auto;
+	max-width: 50%;
+	border-radius: 8px;
+}
+
+.header {
+	background-color: #002060;
+	text-align: center;
+	height: 100px;
+}
+
+body {
+	text-align: justify;
+	background: #001030 ;
+	font-family: "Ink Free" ;
+	color: #ffa000;
+}
+.button {
+  background-color: #ffa000;
+  border: none;
+  color: #001030;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration-thickness: 6px;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: "Ink Free";
+}
+</style>
+<!--Body of the HTML-->
+	<body>
+		<div class="header">
+			<h1>Welcome to the Health Web App</h1>
+		</div>
+		<p>Looking to lose some weight, get back in shape, or just live a more healthy lifestyle? Use our services to log your daily health habits. You can look back at old lacks or see the average of your habits over time!</p>
+		<img src="sunset.jpg">
+		<button class = "button" onclick="document.location.href='form2.html';">Login</button>
+		<button class="button" onclick="document.location.href='register.html';">Register</button>
+	</body>
+</html>

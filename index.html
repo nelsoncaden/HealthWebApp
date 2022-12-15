@@ -1,0 +1,84 @@
+<!doctype html>
+<!--This page acts as the home and gives three options-->
+<!--Author: Caden Nelson-->
+<!--Date: 11/30/2022-->
+<html>
+  <!--Embedded CSS-->
+	<style>
+	@font-face {
+  font-family: 'Ink Free';
+  font-style: normal;
+  font-weight: 400;
+}
+
+.header {
+	background-color: #002060;
+	text-align: center;
+	height: 100px;
+}
+
+body {
+	text-align: justify;
+	background: #001030 ;
+	font-family: "Ink Free" ;
+	color: #ffa000;
+	margin: 25px;
+}
+div.polaroid {
+  width: 250px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+  margin-left: 80px;
+  cursor: pointer;
+  float: left;
+}
+
+div.container {
+  width: 210px;
+  text-align: center;
+  padding: 10px 20px;
+  background-color: #ffa000;
+  border: none;
+  color: #001030;
+  text-align: center;
+  text-decoration-thickness: 6px;
+  display: inline-block;
+  font-size: 20px;
+  cursor: pointer;
+  font-family: "Ink Free";
+}
+</style>
+
+<!--Header to the page-->
+<div class ="header">
+	<h1>Welcome to the Health Web App</h1>
+</div>
+<body>
+  <p>Here, you can log your health stats daily and retrieve that data for later use. You can also see stats on your health habits</p>
+  <h1>Please Select One of the Following</h1>
+<!--Makes clickable card to input daily health facts-->
+<div class="polaroid" onclick="document.location.href='insertion.html';">
+  <img src="workout.jpg" alt="Input Daily Health Facts" style="width:100%">
+  <div class="container">
+  <p>Input Daily Health Log</p>
+  </div>
+</div>
+
+<!--Makes clickable card to select daily health facts-->
+<div class="polaroid" onclick="document.location.href='selection.html';">
+  <img src="veggies.jpg" alt="Select Daily Health Facts" style="width:100%">
+  <div class="container">
+    <p>See Daily Health Logs</p>
+  </div>
+</div>
+
+<!--Makes clickable card to see health stats-->
+<div class="polaroid" onclick="document.location.href='stats.html';">
+  <img src="stats.jpg" alt="See Health Stats" style="width:100%">
+  <div class="container">
+    <p>See Health Stats</p>
+  </div>
+</div>
+</body>
+</html>
